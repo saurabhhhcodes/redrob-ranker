@@ -1,0 +1,11 @@
+# Ignore large candidates pool data file
+candidates.jsonl
+sample_candidates.json
+candidates.jsonl.gz
+
+# System files
+.DS_Store
+*.log
+__pycache__/
+.git/
+.agents/

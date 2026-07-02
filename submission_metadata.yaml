@@ -1,0 +1,68 @@
+# Redrob Hackathon — Submission Metadata
+#
+# Filled template for the Intelligent Candidate Discovery & Ranking Challenge.
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "Team Saurabh"
+
+primary_contact:
+  name: "Saurabh Kumar Bajpai"
+  email: "saurabhbajpai03@outlook.com"
+  phone: "+91-9870330830"
+
+team_members:
+  - name: "Saurabh Kumar Bajpai"
+    email: "saurabhbajpai03@outlook.com"
+    role: "AI Developer / ML Engineer"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/saurabhkumarbajpaiai/redrob-ranker"
+
+sandbox_link: "https://huggingface.co/spaces/saurabhkumarbajpaiai/redrob-ranker"
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./team_saurabh.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "MacBook Pro"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.9.6"
+  os: "macOS 14.5"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Gemini"
+  - "Cursor"
+  - "Claude"
+
+ai_usage_summary: |
+  Used Gemini for coding assistance, debugging, and code structure. Used Cursor as the IDE. No candidate data was transmitted to external APIs during ranking.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  A heuristics-driven candidate discovery and ranking system. Features an automated multi-step honeypot scanner that filters out all 81 synthetic contradictions (e.g. single job exceeding total experience, skill duration conflicts, future certifications). Eligible candidates are scored using a linear combination of target experience alignment (5-9 years), title relevancy, and key skills weighting (vector databases, dense retrieval, and ranking evaluation metrics). Raw scores are adjusted using multiplicative behavioral signals like login recency, notice period, and recruiter response rates.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
